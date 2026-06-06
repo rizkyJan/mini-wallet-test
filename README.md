@@ -84,7 +84,7 @@ php artisan key:generate
 Buat database baru di MySQL atau MariaDB, misalnya:
 
 ```sql
-CREATE DATABASE mini_e_wallet;
+CREATE DATABASE db_wallet;
 ```
 
 Lalu ubah konfigurasi database di file `.env`:
