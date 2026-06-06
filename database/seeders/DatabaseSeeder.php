@@ -10,25 +10,31 @@ class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
-        User::create([
-            'name' => 'User A',
-            'email' => 'usera@mail.com',
-            'password' => Hash::make('password'),
-            'balance' => 100000,
-        ]);
+        User::firstOrCreate(
+            ['email' => 'usera@mail.com'],
+            [
+                'name' => 'User A',
+                'password' => Hash::make('password'),
+                'balance' => 100000,
+            ]
+        );
 
-        User::create([
-            'name' => 'User B',
-            'email' => 'userb@mail.com',
-            'password' => Hash::make('password'),
-            'balance' => 100000,
-        ]);
+        User::firstOrCreate(
+            ['email' => 'userb@mail.com'],
+            [
+                'name' => 'User B',
+                'password' => Hash::make('password'),
+                'balance' => 100000,
+            ]
+        );
 
-        User::create([
-            'name' => 'User C',
-            'email' => 'userc@mail.com',
-            'password' => Hash::make('password'),
-            'balance' => 100000,
-        ]);
+        User::firstOrCreate(
+            ['email' => 'userc@mail.com'],
+            [
+                'name' => 'User C',
+                'password' => Hash::make('password'),
+                'balance' => 100000,
+            ]
+        );
     }
 }
