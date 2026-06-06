@@ -96,7 +96,7 @@ APP_URL=http://mini-e-wallet.test
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=mini_e_wallet
+DB_DATABASE=db_wallet
 DB_USERNAME=root
 DB_PASSWORD=
 ```
